@@ -6,7 +6,7 @@ CREATE TABLE clients (
     address TEXT NOT NULL,
     phone VARCHAR(20) NOT NULL UNIQUE,
     email VARCHAR(100) UNIQUE,
-    driver_license VARCHAR(20) UNIQUE
+    driver_license VARCHAR(20) NOT NULL UNIQUE
 );
 
 CREATE TABLE cars (
